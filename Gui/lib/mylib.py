@@ -11,9 +11,9 @@ import plotly.express as px
 @st.cache_resource
 def load_model_and_bins():
     try:
-        model = joblib.load("models/kmeans_rfm_model.pkl")
-        scaler = joblib.load("models/scaler.pkl")
-        bins = joblib.load("models/rfm_bins.pkl")
+        model = joblib.load("Gui/models/kmeans_rfm_model.pkl")
+        scaler = joblib.load("Gui/models/scaler.pkl")
+        bins = joblib.load("Gui/models/rfm_bins.pkl")
         return model, scaler, bins
     except Exception as e:
         st.error(f"Lỗi khi tải model/scaler: {e}")
