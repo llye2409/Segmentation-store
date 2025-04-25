@@ -4,7 +4,7 @@ from PIL import Image
 import plotly.express as px
 
 # Read data from CSV file (replace 'your_data.csv' with your actual file name)
-df = pd.read_csv("data/rfm_data.csv")
+df = pd.read_csv("Gui/data/rfm_data.csv")
 
 def customer_insights():
     st.title("📊 Customer Insights")
